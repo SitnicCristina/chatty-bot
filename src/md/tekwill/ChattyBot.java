@@ -2,16 +2,6 @@ package md.tekwill;
 
 import java.util.Scanner;
 
-/*
- * "\uD83D\uDC4B" - waving hand
- * "\uD83E\uDD16" - robot
- * "\uD83D\uDE32" - astonished face
- * "\uD83E\uDD14" - thinking face
- * "\uD83D\uDE04" - smiling face
- * "\uD83D\uDE10" - serious face
- * "\uD83D\uDE1E" - disappointed face
- * "\uD83D\uDE0D" - heart eyes
- */
 public class ChattyBot {
     public static void main(String[] args) {
         //Hello message from Chatty-bot
