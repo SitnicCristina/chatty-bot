@@ -30,17 +30,23 @@ public class ChattyBot {
         //Chatty-bot ask to enter the real age
         System.out.println("Tell me your real age, and let's see if my guess is right:");
         for (int realAge = input2.nextInt(); realAge != userAge; realAge = input2.nextInt()) {
-            if (realAge > 100) {
-                System.out.println("Heeeey, somebody must be joking here. you can't be that old! Please try again!");
-            } else if (realAge <= 0) {
+
+            if (realAge <= 0) {
                 System.out.println("Heeeey, somebody must be joking here. you can't be that young! Please try again!");
+            } else if (realAge <= 7) {
+                System.out.println("Wow " + realAge + "! You are very young, just " + realAge + " years old and you're already running an app by yourself. That's sweet! Try and learn some programming, maybe you'll be the Iron Man of our century?");
+            } else if (realAge <= 15) {
+                System.out.println("Hey " + name + ", you're just " + realAge + " years old, what a good age to gain some basic knowledge in programming! ");
+            } else if (realAge <= 55) {
+                System.out.println("Oh my, " + name + ", your age is " + realAge + ". That's the most perfect time to learn programming! ");
+            } else if (realAge <= 120) {
+                System.out.println("Oh my, " + name + ", your age is " + realAge + ". You have many years ahead! It's never too late to learn programming!");
             } else {
-                System.out.println("Ohh! Sorry Jonny, I'm still learning. I hope you still belive in magic!");
+                System.out.println("Heeeey, somebody must be joking here. you can't be that old! Please try again!");
             }
             System.out.println("Tell me your real age, and let's see if my guess is right:");
         }
         System.out.println("\uD83D\uDE04Yaaay! In the end, I'm still capable of doing something! \uD83D\uDE0D");
-
 
         System.out.println("\nSo, " + name + ", your age is " + userAge + ". That's the most perfect time to learn programming!");
 
